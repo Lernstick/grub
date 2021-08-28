@@ -158,6 +158,7 @@ CD_MODULES="
 	password_pbkdf2
 	png
 	probe
+	read
 	reboot
 	regexp
 	search
