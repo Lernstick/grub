@@ -136,6 +136,7 @@ CD_MODULES="
 	peimage
 	png
 	probe
+	read
 	reboot
 	regexp
 	search
