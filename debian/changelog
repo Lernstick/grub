@@ -1,4 +1,4 @@
-grub2 (2.06-3+lernstick.1) unstable; urgency=medium
+grub2 (2.06-3+lernstick.1) lernstick-11; urgency=medium
 
   [ Thore Sommer ]
   * d/build-efi-images: add read to CD_MODULES
