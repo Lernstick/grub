@@ -1,3 +1,10 @@
+grub2 (2.06-13+lernstick.1) lernstick-12; urgency=medium
+
+  * d/build-efi-images: add read to CD_MODULES
+  * Add sbat for lernstick
+
+ -- Thore Sommer <mail@thson.de>  Sun, 8 Oct 2023 18:00:00 +0200
+
 grub2 (2.06-13+deb12u1) bookworm-security; urgency=medium
 
   [ Mate Kukri ]
