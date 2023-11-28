@@ -1,3 +1,10 @@
+grub2 (2.12~rc1-12+lernstick.1) lernstick-12; urgency=medium
+
+  * d/build-efi-images: add read to CD_MODULES
+  * Add sbat for lernstick
+
+ -- Thore Sommer <mail@thson.de>  Tue, 28 Nov 2023 21:33:03 +0200
+
 grub2 (2.12~rc1-12) unstable; urgency=medium
 
   [ Mate Kukri ]
