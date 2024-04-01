@@ -41,10 +41,10 @@ index b4825b7..990d8c7 100644
  @command{terminal_input} or @command{terminal_output} command is used
  (@pxref{terminal_input}, @pxref{terminal_output}).
 diff --git a/grub-core/Makefile.core.def b/grub-core/Makefile.core.def
-index c3ad031..7b49f77 100644
+index 7e7e360..f580ef7 100644
 --- a/grub-core/Makefile.core.def
 +++ b/grub-core/Makefile.core.def
-@@ -2105,7 +2105,6 @@ module = {
+@@ -2106,7 +2106,6 @@ module = {
    name = serial;
    common = term/serial.c;
    x86 = term/ns8250.c;
