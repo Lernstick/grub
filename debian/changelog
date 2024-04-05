@@ -6,8 +6,20 @@ grub2 (2.12-3) UNRELEASED; urgency=medium
   [ Mate Kukri ]
   * d/p/mkconfig-ubuntu-recovery.patch: Use "recovery" instead of "single recovery" for recovery mode bootparams
   * d/p/revert-term-ns8250-spcr.patch: Revert ACPI SPCR table support (#1062073)
+  * d/p/efidisk-breakup-large-reads.patch: efidisk: Breakup large reads into batches
+  * Revert "d/p/efidisk-breakup-large-reads.patch: efidisk: Breakup large reads into batches"
 
- -- Mate Kukri <mate.kukri@canonical.com>  Wed, 07 Feb 2024 08:30:42 +0000
+  [ Jiajie Chen ]
+  * Enable building for LoongArch64
+
+  [ Heinrich Schuchardt ]
+  * d/rules: build monolithic images for all EFI architectures
+
+  [ Julian Andres Klode ]
+  * Introduce new -unsigned packages to house the pre-built .efi binaries
+  * signing: Use the -unsigned packages as signed build-depends
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Fri, 05 Apr 2024 21:47:46 +0200
 
 grub2 (2.12-2) unstable; urgency=medium
 
