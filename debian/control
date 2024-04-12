@@ -276,8 +276,8 @@ Description: GRand Unified Bootloader, version 2 (EFI-IA32 modules)
 Package: grub-efi-ia32-unsigned
 Architecture: any-i386 any-amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, grub-common (= ${binary:Version})
-Replaces: grub-efi-ia32-bin (<< 2.12-2~)
-Breaks: grub-efi-ia32-bin (<< 2.12-2~)
+Replaces: grub-efi-ia32-bin (<< 2.12-3~)
+Breaks: grub-efi-ia32-bin (<< 2.12-3~)
 Multi-Arch: foreign
 XB-Efi-Vendor: ${efi:Vendor}
 Description: GRand Unified Bootloader, version 2 (EFI-IA32 images)
@@ -363,8 +363,8 @@ Description: GRand Unified Bootloader, version 2 (EFI-AMD64 modules)
 Package: grub-efi-amd64-unsigned
 Architecture: i386 kopensolaris-i386 any-amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, grub-common (= ${binary:Version})
-Replaces: grub-efi-amd64-bin (<< 2.12-2~)
-Breaks: grub-efi-amd64-bin (<< 2.12-2~)
+Replaces: grub-efi-amd64-bin (<< 2.12-3~)
+Breaks: grub-efi-amd64-bin (<< 2.12-3~)
 Multi-Arch: foreign
 XB-Efi-Vendor: ${efi:Vendor}
 Description: GRand Unified Bootloader, version 2 (EFI-AMD64 images)
