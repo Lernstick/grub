@@ -80,7 +80,7 @@ Recommends: os-prober (>= 1.33)
 Suggests: multiboot-doc, grub-emu [any-i386 any-amd64 any-powerpc], mtools [any-i386 any-amd64 any-ia64 any-arm any-arm64 riscv64 any-loong64], xorriso (>= 0.5.6.pl00), desktop-base (>= 4.0.6), console-setup
 Conflicts: init-select
 # mdadm: See bugs #435983 and #455746
-Breaks: mdadm (<< 2.6.7-2), lupin-support (<< 0.55), friendly-recovery (<< 0.2.13), apport (<< 2.1.1)
+Breaks: mdadm (<< 2.6.7-2), lupin-support (<< 0.55), friendly-recovery (<< 0.2.13), apport (<< 2.1.1), grub-efi-amd64-signed (<< 1+2.12~rc1), grub-efi-arm64-signed (<< 1+2.12~rc1), grub-efi-ia32-signed (<< 1+2.12~rc1)
 Multi-Arch: foreign
 Description: GRand Unified Bootloader (common files)
  This package contains common files shared by the distinct flavours of GRUB.
