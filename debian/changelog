@@ -1,3 +1,9 @@
+grub2 (2.12-2+lernstick.1) lernstick-12; urgency=medium
+
+  * update SBAT for lernstick
+
+ -- Thore Sommer <mail@thson.de>  Tue, 04 Jun 2024 16:00:00 +0200
+
 grub2 (2.12-2~deb13u1) trixie; urgency=medium
 
   [ Mate Kukri ]
