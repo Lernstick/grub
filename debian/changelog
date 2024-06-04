@@ -1,4 +1,50 @@
-grub2 (2.12~rc1-12+lernstick.1) lernstick-12; urgency=medium
+grub2 (2.12-2~deb13u1) trixie; urgency=medium
+
+  [ Mate Kukri ]
+  * Revert peimage to re-use GRUB's image handle (LP: #2057679) (LP: #2054127)
+  * d/build-efi-images: Make sure downstream didn't remove peimage SBAT
+    entry
+  * SECURITY UPDATE: Use-after-free in peimage module [LP: #2054127]
+    - CVE-2024-2312
+
+  [ Julian Andres Klode ]
+  * Bump SBAT level to `grub.peimage,2`; and also bump `grub.debian,5` to
+    make sure we can revoke any downstream users of peimage that forgot to
+    include the grub.peimage component if that should become necessary.
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Fri, 05 Apr 2024 20:50:28 +0200
+
+grub2 (2.12-1) unstable; urgency=medium
+
+  [ Mate Kukri ]
+  * New upstream version, 2.12
+  * d/patches: Rebase on `upstream/2.12` and drop superseded patches:
+    - Dropping patches now included upstream:
+      + d/p/ntfs-cve-fixes/*: Fixes for NTFS OOB CVE
+      + d/p/upstream/xfs-*: XFS parsing fixes
+      + d/p/upstream/unmerged-usr-shebang.patch
+    - Dropping patch replaced with configure option:
+      + d/p/dejavu-font-path.patch
+  * d/rules: Pass configure option '--enable-grub-themes'
+  * d/rules: Provide Debian specific DejaVu path via configure
+  * d/{control,rules}: Use default gcc version
+  * d/p/extra_deps_lst.patch:
+    Checkout "extra_deps.lst" from upstream/master
+  * d/p/sb/revert-efi-fallback-to-legacy.patch:
+    Also revert newer fallback patch
+
+  [ Julian Andres Klode ]
+  * Add Mate to Uploaders
+
+ -- Mate Kukri <mate.kukri@canonical.com>  Mon, 15 Jan 2024 09:54:55 +0000
+
+grub2 (2.12~rc1-13) unstable; urgency=medium
+
+  * No-change rebuild to retrigger signing following binNMU breakage
+
+ -- Julian Andres Klode <jak@debian.org>  Fri, 12 Jan 2024 19:00:41 +0100
+
+ grub2 (2.12~rc1-12+lernstick.1) lernstick-12; urgency=medium
 
   * d/build-efi-images: add read to CD_MODULES
   * Add sbat for lernstick
