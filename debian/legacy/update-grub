@@ -846,9 +846,9 @@ fi
 ## heres where we start writing out the kernel entries
 counter=0
 
-grub2name="${kernel_dir}/grub/core.img"
+grub2name="${kernel_dir}/grub/i386-pc/core.img"
 if [ "$LET_US_TRY_GRUB_2" = "true" ] \
-  && test -f /boot/grub/core.img ; then
+  && test -f /boot/grub/i386-pc/core.img ; then
 	echo "Found GRUB 2: $grub2name" >&2
 	cat >> $buffer << EOF
 title		Chainload into GRUB 2
