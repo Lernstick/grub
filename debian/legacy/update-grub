@@ -1043,7 +1043,7 @@ set_default_value() {
 }
 
 #Updating the default number
-if [ "$LET_US_TRY_GRUB_2" = "true" ] && test -f /boot/grub/core.img ; then
+if [ "$LET_US_TRY_GRUB_2" = "true" ] && test -f /boot/grub/i386-pc/core.img ; then
 	set_default_value "0"
 elif test -z "$notChangeDefault"; then
 	newDefaultNumberPlusOne=$(grep "^[[:blank:]]*title[[:blank:]]*" $menu | grep -n "${defaultEntry}" | cut -f1 -d ":" | sed -ne "1p")
