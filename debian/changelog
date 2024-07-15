@@ -1,3 +1,12 @@
+grub2 (2.12-5) unstable; urgency=medium
+
+  * Build-Depend on pkgconf instead of pkg-config.
+  * Update legacy/update-grub to correctly check for grub2 core.img
+  * Correct Breaks+Replaces on grub-efi-arm64-unsigned for grub-efi-arm64-bin.
+    (Closes: #1076235)
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Mon, 15 Jul 2024 17:05:20 +0200
+
 grub2 (2.12-4) unstable; urgency=medium
 
   [ Mate Kukri ]
