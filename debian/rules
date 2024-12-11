@@ -609,7 +609,7 @@ override_dh_auto_clean:
 override_dh_clean:
 	dh_clean
 
-	chmod +x debian/{bug-script,grub.d/*,legacy/*,kernel/*}
+	chmod +x debian/{bug-script,grub.d/*,kernel/*}
 
 	for i in $(AUTOGEN_DEB_FILES) ; do \
 		rm -f debian/grub-{pc,efi-*,ieee1275,coreboot,uboot,xen,yeeloong,emu}{,-bin,-dbg}.$$i ; \
