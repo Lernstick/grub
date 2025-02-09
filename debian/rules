@@ -558,12 +558,6 @@ ifneq (,$(DEFAULT_HIDDEN_TIMEOUT))
 		debian/grub2-common/usr/share/grub/default/grub
 endif
 endif
-ifeq (yes,$(shell dpkg-vendor --derives-from Ubuntu && echo yes))
-ifneq (,$(filter grub-pc,$(BUILD_PACKAGES)))
-	patch debian/grub-pc/usr/lib/grub-legacy/update-grub \
-		< debian/legacy/update-grub.ubuntu.patch
-endif
-endif
 
 override_dh_installdocs:
 	dh_installdocs $(patsubst %,-p%,$(filter grub-common grub-rescue-pc grub-firmware-qemu grub-xen-host,$(BUILD_PACKAGES))) -A AUTHORS NEWS README THANKS TODO
@@ -615,7 +609,7 @@ override_dh_auto_clean:
 override_dh_clean:
 	dh_clean
 
-	chmod +x debian/{bug-script,grub.d/*,legacy/*,kernel/*}
+	chmod +x debian/{bug-script,grub.d/*,kernel/*}
 
 	for i in $(AUTOGEN_DEB_FILES) ; do \
 		rm -f debian/grub-{pc,efi-*,ieee1275,coreboot,uboot,xen,yeeloong,emu}{,-bin,-dbg}.$$i ; \
