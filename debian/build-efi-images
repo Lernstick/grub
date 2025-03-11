@@ -88,9 +88,16 @@ EOF
 
 mkdir -p "$workdir/memdisk/fonts"
 
+## Lernstick custom
+for i in 16 18 20 22 24 26 28
+do 
+	$(dirname $grub_mkimage)/grub-mkfont -s $i -o "$workdir/dejavusansmono-$i.pf2" /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+done
+
 for name in "memdisk" "memdisk-cd" "memdisk-netboot"; do
         mkdir -p "$workdir/$name/fonts"
         cp "$grub_core/../unicode.pf2" "$workdir/$name/fonts"
+        cp $workdir/dejavusansmono* "$workdir/$name/fonts" # custom
 done
 
 mksquashfs "$workdir/memdisk-cd" "$workdir/memdisk-cd.squashfs" -comp xz
