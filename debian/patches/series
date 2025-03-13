@@ -144,3 +144,7 @@ cve-2025-jan/kern-partition-Add-sanity-check-after-grub_strtoul-call.patch
 cve-2025-jan/kern-misc-Add-sanity-check-after-grub_strtoul-call.patch
 cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch
 cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch
+cve-2025-jan/fs-ext2-Rework-out-of-bounds-read-for-inline-and-external.patch
+cve-2025-jan/fs-xfs-Fix-grub_xfs_iterate_dir-return-value-in-case-of-f.patch
+cve-2025-jan/fs-xfs-Propagate-incorrect-inode-error-from-grub_xfs_read.patch
+cve-2025-jan/fs-xfs-Handle-root-inode-read-failure-in-grub_xfs_mount.patch
