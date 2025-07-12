@@ -1,3 +1,16 @@
+grub2 (2.12-9+lernstick.1) lernstick-12; urgency=medium
+
+  [ Thore Sommer ]
+  * d/build-efi-images: add read to CD_MODULES
+
+  [ Jörg Berkel ]
+  * added DejaVuSans Mono
+
+  [ Thore Sommer ]
+  * Add sbat for lernstick
+
+ -- Lernstick Build <info@lernstick.ch>  Sat, 12 Jul 2025 11:48:51 +0200
+
 grub2 (2.12-9) unstable; urgency=medium
 
   * Apply patch by Ben Hutchings to not strip .exec or .image files
